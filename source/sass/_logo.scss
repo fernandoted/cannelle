@@ -1,0 +1,44 @@
+/* Logo - Cannelle (http://github.com/fernandoted/cannelle)
+   author: fernando ted
+   http://fernandoted.com.br/ - http://github.com/fernandoted/ - http://takealook.com.br/
+   07/02/2016 
+*/
+
+
+.logo-container {
+	width: 100%;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-justify-content: center;
+	justify-content: center;
+	
+	.logo-wrapper, .logo-caseirinho-wrapper {
+		
+		.logo-home {
+			width: 100%;
+		}
+	}
+}
+
+.logo-wrapper {
+	width: 70%;
+}
+
+.logo-caseirinho-wrapper {
+	width: 60%;
+}
+
+/* DESKTOP */
+@media screen and (min-width: 769px) {
+	/*.logo-container {
+		margin-top: 0;
+		margin-bottom: 0;*/
+		.logo-wrapper {
+			width: 25%;
+		}
+		
+		.logo-caseirinho-wrapper {
+			width: 20%;
+		}
+	/*}*/
+}

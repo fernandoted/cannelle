@@ -1,0 +1,133 @@
+/* Texts - Cannelle (http://github.com/fernandoted/cannelle)
+   author: fernando ted
+   http://fernandoted.com.br/ - http://github.com/fernandoted/ - http://takealook.com.br/
+   07/02/2016 
+*/
+
+.white-text {
+	color: $white;
+}
+
+.text {
+	/*@include text-style(.9rem, $white);*/
+	font-size: .9rem;
+	margin-bottom: 0;
+}
+.caseirinho-img-intro {
+	
+	.paragraph-wrapper {	
+		width: 100%;
+		padding: 80px 0px;
+		
+		.text {
+			color: $white;
+		}
+	}
+}
+.paragraph-wrapper, .paragraph-half-wrapper, .map-infos-wrapper {
+	width: 100%;
+	
+	.paragraph {
+		padding: 20px;
+	}
+	.text {
+		padding: 20px;
+		color: $gray-text;
+	}
+}
+.paragraph-left {
+	@include text-style(.9rem, $white);
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+.store-text-container {
+	margin: 40px 20px 0 20px;
+	-webkit-display: flex;
+	display: flex;
+	-webkit-justify-content: center;
+	justify-content: center;
+	-webkit-flex-wrap: wrap;
+	flex-wrap: wrap;
+	
+	.store-wrapper, .info-wrapper {
+		text-align: center;
+		
+		.store-name {
+			@include text-style(1rem, $white);
+			text-transform: uppercase;
+			text-align: center;
+			padding-bottom: 5px;
+		}
+		.store-info {
+			@include text-style(.9rem, $white);
+			text-align: center;
+			padding-bottom: 30px;
+		}
+	}	
+}
+
+/* DESKTOP */
+@media screen and (min-width: 769px) {
+	/*.caseirinho-img-intro {
+	
+		.paragraph-wrapper {	
+			width: 45%;
+			margin-left: 80px;
+			
+			.text {
+				padding: 0;
+			}
+		}
+	}*/
+	.paragraph-wrapper {
+		width: 100%;
+	}
+	.paragraph-half-wrapper {
+		width: 40%;
+		
+		.paragraph {
+			@include text-style(.9rem, $gray-text);
+			padding: 20px 80px 20px 80px;
+		}
+	}
+	.paragraph-wrapper {
+		
+		.paragraph {
+			@include text-style(.9rem, $gray-text);
+			padding: 100px 280px;
+			margin-bottom: 0;
+		}
+		.text {
+			padding: 100px 280px;
+		}
+		.paragraph-left {
+			@include text-style(1rem, $white);
+			padding-left: 80px;
+			width: 55%;
+		}
+	}
+	.store-text-container {
+		margin: 0 40px 0 40px;
+		
+		.store-wrapper {
+			-webkit-flex: 1;
+			flex: 1;
+		}
+		.info-wrapper {
+			/*width: 100%;*/
+		}
+		.store-wrapper, .info-wrapper {
+			.store-name {
+				/*@include text-style(1rem, $white);
+				text-transform: uppercase;
+				text-align: center;*/
+				padding-bottom: 20px;
+			}
+			.store-info {
+				/*@include text-style(.9rem, $white);
+				text-align: center;*/
+			}
+		}	
+	}
+}

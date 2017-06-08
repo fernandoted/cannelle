@@ -1,0 +1,27 @@
+/* Variables - Cannelle (http://github.com/fernandoted/cannelle)
+   author: fernando ted
+   http://fernandoted.com.br/ - http://github.com/fernandoted/ - http://takealook.com.br/
+   07/02/2016 
+*/
+
+
+@font-face {
+	font-family: "LetterGothicStd-Bold";
+	src: url(../../dist/fonts/LetterGothicStd-Bold.otf);
+}
+
+@font-face {
+	font-family: "LetterGothicStd";
+	src: url(../../dist/fonts/LetterGothicStd.otf);
+}
+
+/* texts */
+$text-font: "LetterGothicStd-Bold";
+$text-topic: "LetterGothicStd";
+
+/* colors */
+$white: #FFFFFF;
+$smooth-black: #666666;
+$gray-text: #333333;
+$dark-bg: #222222;
+

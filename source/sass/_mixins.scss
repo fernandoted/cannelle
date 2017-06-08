@@ -1,0 +1,47 @@
+/* Mixins - Cannelle (http://github.com/fernandoted/cannelle)
+   author: fernando ted
+   http://fernandoted.com.br/ - http://github.com/fernandoted/ - http://takealook.com.br/
+   07/02/2016 
+*/
+
+
+/* texts */
+@mixin text-style($size, $color) {
+	font-size: $size;
+	color: $color;
+}
+
+@mixin background-fixed($bg-image) {
+	background-image: $bg-image;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-attachment: fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-ms-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+@mixin background-image($bg-image) {
+	background-image: $bg-image;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-attachment: scroll;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-ms-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+/* caseirinho carte image */
+@mixin caseirinho-carte-item($carte-image, $image-possition, $size) {
+	background: $carte-image;
+	background-position: $image-possition;
+	-webkit-background-size: $size;
+	-moz-background-size: $size;
+	-o-background-size: $size;
+	background-size: $size;
+	background-repeat: no-repeat;
+}

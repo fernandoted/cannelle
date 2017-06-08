@@ -1,0 +1,143 @@
+/* Images - Cannelle (http://github.com/fernandoted/cannelle)
+   author: fernando ted
+   http://fernandoted.com.br/ - http://github.com/fernandoted/ - http://takealook.com.br/
+   07/02/2016 
+*/
+
+/* decoration element - bike */
+.bike-container {
+	margin-top: 30px;
+	width: 100%;
+
+	.bike-wrapper {
+		width: 70px;
+		margin: 0 auto;
+
+		.bike-img {
+			width: 100%;
+			opacity: .4;
+		}
+	}
+}
+/* caseirinho carte images */
+.item-image-center-container, .item-image-left-container, .item-image-right-container {
+	width: 100%;
+	display: -webkit-flex;
+	display: flex;
+	
+	.item-image-wrapper {
+		width: 90%;
+	}
+	.item-feijao-wrapper {
+		width: 100%;
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+	
+	.item-image-wrapper, .item-feijao-wrapper {
+		.item-image {
+			@extend .img-fluid;
+			width: 100%;
+		}
+	}
+}
+
+.item-image-center-container {
+	-webkit-justify-content: center;
+	justify-content: center;
+}
+.item-image-left-container {
+	-webkit-justify-content: flex-start;
+	justify-content: flex-start;
+}
+.item-image-right-container {
+	-webkit-justify-content: flex-end;
+	justify-content: flex-end;
+}
+
+
+
+
+.img-maresia, .img-bra {
+	margin: 0 auto;
+	width: 90%;
+}
+.img-fugidinha, .img-maromba, .img-salmao {
+	width: 100%;
+}
+.img-fugidinha, .img-maromba {
+	padding-right: 30px;
+}
+.img-salmao, .img-beringela {
+	padding-left: 30px;
+}
+.soup-image {
+	width: 70%;
+}
+
+.party-icon {
+	width: 10%;
+}
+
+/* DESKTOP */
+@media screen and (min-width: 769px) {
+	
+	.item-image-center-container {
+		width: 100%;
+		
+		.item-image-wrapper {
+			width: 50%;
+		}
+		
+		.item-image-wrapper, .item-feijao-wrapper {
+			.item-image {
+				width: 100%;
+			}
+		}
+	}
+	.item-image-left-container {
+		padding-right: 40px;
+	}
+	.item-image-right-container {
+		padding-left: 40px;
+	}
+	.item-image-left-container, .item-image-right-container {
+		width: 55%;
+		
+		.item-image-wrapper {
+			width: 100%;
+		
+			.item-image {
+				width: 100%;
+			}
+		}
+		.item-feijao-wrapper {
+			width: 95%;
+			padding-left: 150px;
+			
+			.item-image {
+				width: 100%;
+			}
+		}
+	}
+	
+	
+	
+	.img-maresia {
+		margin: 0 auto;
+		width: 45%;
+	}
+	.img-bra {
+		margin: 0 auto;
+		width: 60%;
+	}
+	.img-fugidinha, .img-maromba, .img-salmao {
+		width: 100%;
+	}
+	.img-feijao, .img-torta {
+		padding-left: 150px;
+	}
+	.soup-image {
+		width: 70%;
+	}
+}

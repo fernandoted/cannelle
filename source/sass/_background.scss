@@ -1,0 +1,178 @@
+/* Background - Cannelle (http://github.com/fernandoted/cannelle)
+   author: fernando ted
+   http://fernandoted.com.br/ - http://github.com/fernandoted/ - http://takealook.com.br/
+   07/02/2016 
+*/
+
+.bg-home {
+	background: url(../../dist/img/home-bg-mobile.jpg) no-repeat center center fixed;
+	height: 100%;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+.header-cozinha, .header-caseirinho {
+	width: 100%;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-flex-wrap: wrap;
+	flex-wrap: wrap;
+}
+.white-container {
+	width: 100%;
+	padding: 80px 30px 60px 30px;
+}
+.header-caseirinho {
+	@include background-fixed(url(../../dist/img/textura-caseirinho-mobile-bg.jpg));
+}
+.header-cozinha {
+	@include background-fixed(url(../../dist/img/old-paper-texture-mobile.jpg));
+}
+.img-cozinha-fixed {
+	@include background-image(url(../../dist/img/img-cozinha-02-mobile.jpg));
+	width: 100%;
+	height: 360px;
+}
+.intro-container {
+	@include background-image(url(../../dist/img/sobre-foto-01-mobile.jpg));
+	width: 100%;
+	height: 450px;
+	background-size: cover;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	display: flex;
+	display: -webkit-flex;
+	align-items: center;
+	-webkit-align-items: center;
+}
+
+/* carte background */
+.old-paper-background {
+	@include background-fixed(url(../../dist/img/old-paper-texture-mobile.jpg));
+}
+.header-cardapio {
+	margin-bottom: 60px;
+}
+.header-casa {
+	
+}
+/* caseirinho */
+.caseirinho-img-intro {
+	@include background-image(url(../../dist/img/caseirinho-bg-mobile-01.jpg));
+	width: 100%;
+	height: 450px;
+	display: flex;
+	display: -webkit-flex;
+	align-items: center;
+	-webkit-align-items: center;
+}
+.container-black-bg {
+	background: $dark-bg;
+	width: 100%;
+	/*margin: 40px 0 0 0;*/
+	padding: 40px 0 20px 0;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-justify-content: center;
+	justify-content: center;
+	-webkit-align-items: center;
+	align-items: center;
+}
+/* casa */
+.casa-img-intro {
+	@include background-image(url(../../dist/img/casa-bg.jpg));
+	width: 100%;
+	height: 450px;
+	padding: 0 20px;
+	margin-bottom: 60px;
+	display: flex;
+	display: -webkit-flex;
+	-webkit-align-items: center;
+	align-items: center;
+	
+}
+/* DESKTOP */
+@media screen and (min-width: 769px) {
+	.bg-home {
+		background: url(../../dist/img/home-bg-desktop-02.jpg) no-repeat center center fixed;
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		background-size: cover;
+	}
+	.header-cozinha {
+		@include background-fixed(url(../../dist/img/old-paper-texture.jpg));
+		/*@include background-fixed(url(../../dist/img/bg-caderno-desktop.jpg));
+		background-size: cover;*/
+	}
+	.header-caseirinho {
+		@include background-fixed(url(../../dist/img/textura-caseirinho-bg.jpg));
+	}
+	.white-container {
+		width: 100%;
+		padding: 100px 280px 50px 280px;
+	}
+	.img-cozinha-fixed {
+		@include background-fixed(url(../../dist/img/img-cozinha-02.jpg));
+		width: 100%;
+		height: 535px;
+	}
+	.img-chef-fixed {
+		@include background-fixed(url(../../dist/img/chef-banner-01.jpg));
+		width: 100%;
+		height: 350px;
+		-webkit-box-shadow: -1px 0px 10px 0px rgba(50, 50, 50, 0.5);
+		-moz-box-shadow: -1px 0px 10px 0px rgba(50, 50, 50, 0.5);
+		box-shadow: -1px 0px 10px 0px rgba(50, 50, 50, 0.5);
+	}
+	.intro-container {
+		background: url(../../dist/img/sobre-foto-01-desktop.jpg) no-repeat;
+		height: 600px;
+		-webkit-flex-direction: column;
+		flex-direction: column;
+		-webkit-justify-content: space-between;
+		justify-content: space-between;
+		padding: 80px 0;
+		background-size: cover;
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		-webkit-box-shadow: -1px 0px 10px 0px rgba(50, 50, 50, 0.5);
+		-moz-box-shadow: -1px 0px 10px 0px rgba(50, 50, 50, 0.5);
+		box-shadow: -1px 0px 10px 0px rgba(50, 50, 50, 0.5);
+	}
+	/* carte background */
+	.old-paper-background {
+		@include background-fixed(url(../../dist/img/old-paper-texture.jpg));
+	}
+	.caseirinho-img-intro {
+		@include background-fixed(url(../../dist/img/caseirinho-bg-01.jpg));
+		height: 600px;
+		-webkit-flex-direction: column;
+		flex-direction: column;
+		-webkit-justify-content: space-between;
+		justify-content: space-between;
+		padding: 80px 0;
+		-webkit-box-shadow: -1px 0px 10px 0px rgba(50, 50, 50, 0.5);
+		-moz-box-shadow: -1px 0px 10px 0px rgba(50, 50, 50, 0.5);
+		box-shadow: -1px 0px 10px 0px rgba(50, 50, 50, 0.5);
+	}
+	.container-black-bg {
+		padding: 40px 0 70px 0;
+		-webkit-box-shadow: -1px 0px 10px 0px rgba(50, 50, 50, 0.5);
+		-moz-box-shadow: -1px 0px 10px 0px rgba(50, 50, 50, 0.5);
+		box-shadow: -1px 0px 10px 0px rgba(50, 50, 50, 0.5);
+	}
+	.casa-img-intro {
+		@include background-image(url(../../dist/img/casa-bg.jpg));
+		height: 600px;
+		padding: 80px 0;
+		margin-bottom: 0;
+		-webkit-flex-direction: column;
+		flex-direction: column;
+		-webkit-justify-content: space-between;
+		justify-content: space-between;
+	}
+}

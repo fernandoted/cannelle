@@ -1,0 +1,30 @@
+{
+  "name": "cannelle",
+  "description": "A website of a beautiful restaurant in Ubatuba, Brazil.",
+  "main": "index.js",
+  "authors": [
+    "Fernando Ted <fernandoted@icloud.com>"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "restaurant",
+    "native",
+    "food",
+    "brazil",
+    "beach",
+    "food",
+    "classic",
+    "restaurante",
+    "ubatuba",
+    "cozinha",
+    "caiçara"
+  ],
+  "homepage": "https://github.com/fernandoted/cannelle",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

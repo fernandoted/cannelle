@@ -1,0 +1,75 @@
+/* Titles - Cannelle (http://github.com/fernandoted/cannelle)
+   author: fernando ted
+   http://fernandoted.com.br/ - http://github.com/fernandoted/ - http://takealook.com.br/
+   07/02/2016 
+*/
+
+h4, .h4 {
+	font-size: 1.25rem;
+}
+
+.title-wrapper {
+	width: 100%;
+}
+.title {
+	font-size: 1.8rem;
+}
+.subtitle {
+	font-size: 1.250rem;
+}
+.store-text-container {
+	.store-wrapper {
+		.subtitle {
+			color: $white;
+			text-transform: uppercase;
+			text-align: center;
+			padding-bottom: 5px;
+		}
+	}
+}
+.info-wrapper {
+	width: 100%;
+	color: $white;
+	margin-top: 30px;
+	padding: 0 20px;
+	
+	.title {
+		text-align: center;
+		text-transform: uppercase;
+		margin-bottom: 0;
+		padding: 20px 0 15px 0;
+	}
+	.subtitle {
+	}
+}
+
+/* DESKTOP */
+@media screen and (min-width: 769px) {
+	.title {
+		font-size: 2.5rem;
+	}	
+	.subtitle {
+		font-size: 2rem;
+	}
+	.info-wrapper {
+		margin-top: 30px;
+		padding: 0 100px;
+		
+		.title {
+			padding: 20px 0 15px 0;
+		}
+		.subtitle {
+		}
+	}
+	.store-text-container {
+		
+		.store-wrapper {
+			margin-top: 30px;
+			
+			.subtitle {
+				padding-bottom: 20px;
+				font-size: 1.375rem;
+			}
+		}
+	}
+}

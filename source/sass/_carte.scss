@@ -1,0 +1,69 @@
+/* Carte style - Cannelle (http://github.com/fernandoted/cannelle)
+   author: fernando ted
+   http://fernandoted.com.br/ - http://github.com/fernandoted/ - http://takealook.com.br/
+   07/02/2016 
+*/
+
+/* iPhone 6 */
+.carte-container {
+	width: 100%;
+	/*margin-top: 60px;*/
+	display: -webkit-flex;
+	display: flex;
+	-webkit-flex-wrap: wrap;
+	flex-wrap: wrap;
+	-webkit-justify-content: center;
+	justify-content: center;
+	
+	.carte-wrapper-title {
+			width: 100%;
+			
+		.carte-title {
+			text-align: center;
+			padding: 15px 0;
+			margin-bottom: 0;	
+			
+			.carte-link {
+				@include text-style(1.5rem, $smooth-black);
+				text-transform: uppercase;
+				text-decoration: none;
+			}
+		}
+	}
+	.carte-content {
+		width: 100%;
+		
+		.carte-subtitle {
+			@include text-style(.9rem, $smooth-black);
+			text-align: center;
+			letter-spacing: 2px;
+			padding-bottom: 20px;
+		}
+		
+		.carte-item-title {
+			@include text-style(1.250rem, $smooth-black);
+			padding-left: 20px;
+		}
+		.carte-item-desc {
+			@include text-style(1rem, $smooth-black);
+			padding: 10px 30px;
+		}
+	}
+}
+
+/* DESKTOP */
+@media screen and (min-width: 769px) {
+	.carte-container {
+		margin-top: 0;
+		.carte-wrapper-title {
+			.carte-title {
+				.carte-link {
+					font-size: 1.750rem;
+				}
+			}
+		}
+		.carte-content {
+			width: 60%;
+		}
+	}
+}

@@ -1,0 +1,142 @@
+/* Decoration Elements - Cannelle (http://github.com/fernandoted/cannelle)
+   author: fernando ted
+   http://fernandoted.com.br/ - http://github.com/fernandoted/ - http://takealook.com.br/
+   07/02/2016 
+*/
+
+
+.top-corner-mold-container {
+	display: none;
+}
+
+.bottom-corner-mold-wrapper {
+	display: none;
+}
+
+.mold-container, .mold-footer-container {
+	width: 100%;
+	display: -display-flex;
+	display: flex;
+	-webkit-justify-content: center;
+	justify-content: center;
+	
+	.mold-wrapper {
+		width: 80%;
+		
+		.mold-home, .mold-footer {
+			width: 100%;
+		}
+		
+		.mold-footer {
+			opacity: .3;
+		}
+	}
+}
+
+/* caseirinho carte mold */
+.mold-row {
+	display: none;
+}
+
+.line-break-mobile {
+	display: block;
+}
+
+.margin-top-standard {
+	margin-top: 60px;
+}
+
+.mold-info-container {
+	width: 100%;
+	
+	.mold-info-wrapper {
+		width: 55%;
+		margin: 0 auto;
+		
+		.mold-info {
+			@extend .img-fluid;
+			width: 100%;	
+			opacity: .5;
+		}
+	}
+}
+
+/* DESKTOP */
+@media screen and (min-width: 769px) {
+	
+	.top-corner-mold-container {
+		display: block;
+		margin-top: 60px;
+		display: -webkit-flex;
+		display: flex;
+		justify-content: space-between;
+		
+		.corner-mold-top-wrapper {
+			width: 75px;
+			
+			.corner-mold-top-image {
+				width: 100%;
+			}
+		}	
+	}
+	.bottom-corner-mold-wrapper {
+		display: block;
+		margin-bottom: 60px;
+		width: 75px;
+		
+		.corner-mold-bottom-image {
+			width: 100%;
+		}
+	}
+	.mold-container {
+		display: none;
+	}
+	.mold-footer-container {
+		
+		.mold-wrapper {
+			width: 30%;
+		}
+	}
+	.line-break-mobile {
+		display: none;
+	}
+	.margin-top-standard {
+		margin-top: 100px;
+	}
+	
+	.mold-row {
+		display: block;
+		width: 100%;
+		padding: 0 80px 0 80px;
+		display: -webkit-flex;
+		display: flex;
+		-webkit-justify-content: space-between;
+		justify-content: space-between;
+		
+		.top-corner-wrapper {
+			width: 100px;
+			height: auto;
+			
+			.corner-mold-image, .corner-mold-image-white {
+				max-width: 100%;
+			}
+			.corner-mold-image-white {
+				opacity: .9;
+			}
+			.corner-mold-image {
+				opacity: .3;
+			}
+		}
+	}
+	.mold-info-container {
+		
+		.mold-info-wrapper {
+			width: 16%;
+			
+			.mold-info {	
+				opacity: .6;
+			}
+		}
+	}
+}
+

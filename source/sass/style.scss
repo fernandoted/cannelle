@@ -1,0 +1,94 @@
+/* Stylesheet - Cannelle (http://github.com/fernandoted/cannelle)
+   author: fernando ted
+   http://fernandoted.com.br/ - http://github.com/fernandoted/ - http://takealook.com.br/
+   07/02/2016 
+*/
+
+@import "../components/bootstrap/scss/bootstrap";
+@import "variables";
+@import "mixins";
+@import "background";
+@import "topbar";
+@import "logo";
+@import "menu";
+@import "titles";
+@import "texts";
+@import "footer";
+@import "buttons-links";
+@import "decoration-elements";
+@import "carousel";
+@import "carte";
+@import "caseirinho-carte";
+@import "map";
+@import "images";
+
+html, body {
+	height: 100%;
+}
+
+body {
+	font-family: $text-font;
+	position: relative;
+}
+
+a {
+	text-decoration: none;
+}
+
+li {
+	list-style: none;
+}
+
+.container-all {
+	width: 100%;
+	padding-right: 1rem;
+	padding-left: 1rem;
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	display: -webkit-flex;
+	display: flex;
+	/*-webkit-flex-wrap: wrap;
+	flex-wrap: wrap;*/
+	justify-content: space-between;
+	flex-direction: column;
+	/*-webkit-align-items: flex-start;
+	align-items: flex-start;*/
+}
+
+.container-content {
+	display: -webkit-flex;
+	display: flex;
+	-webkit-flex-wrap: wrap;
+	flex-wrap: wrap;
+}
+
+.mobile {
+	display: block;
+}
+
+.desktop {
+	display: none;
+}
+
+/* DESKTOP */
+@media screen and (min-width: 769px) {
+	.container-all {
+		padding-right: 5rem;
+		padding-left: 5rem;
+	}
+	
+	.mobile {
+		display: none;
+	}
+	
+	.desktop {
+		display: block;
+	}
+}
+
+
+
+

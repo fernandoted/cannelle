@@ -1,0 +1,92 @@
+/* Footer - Cannelle (http://github.com/fernandoted/cannelle)
+   author: fernando ted
+   http://fernandoted.com.br/ - http://github.com/fernandoted/ - http://takealook.com.br/
+   07/02/2016 
+*/
+
+
+.footer-home {
+	width: 100%;
+	margin-top: 40px;
+	margin-bottom: 10px;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-justify-content: center;
+	justify-content: center;
+	-webkit-flex-wrap: wrap;
+	flex-wrap: wrap;
+	
+	.footer-home-container {
+		text-align: center;
+		
+		.footer-home-text {
+			@include text-style(.8rem, $white);
+			
+			.line-break {
+				display: block;
+			}
+		}
+		.social-footer-wrapper {
+			display: none;
+		}
+	}
+}
+
+.footer {
+	.address-wrapper {
+		text-align: center;
+		padding: 20px 0 10px 0;
+		
+		.address {
+			@include text-style(.8rem, $smooth-black);
+			margin-bottom: 0;
+		}
+	}
+}
+
+/* DESKTOP */
+@media screen and (min-width: 769px) {
+	.footer-home {
+		-webkit-justify-content: space-between;
+		justify-content: space-between;
+		margin-top: 40px;
+		margin-bottom: 0;
+		
+		
+		.footer-home-container {
+			
+			.footer-home-text {
+				/*margin-top: 100px;*/
+				
+				.line-break {
+					display: none;
+				}
+			}
+			.social-footer-wrapper {
+				display: block;
+				
+				.social-footer-link {
+					color: $white;
+					font-size: 1.7rem;
+					padding: 0 5px;
+					-webkit-transition: ease-in-out .2s;
+					-moz-transition: ease-in-out .2s;
+					-o-transition: ease-in-out .2s;
+					transition: ease-in-out .2s;
+					
+					&:hover {
+						opacity: .6;
+					}
+				}
+			}
+		}
+	}
+	.footer {
+	 	.address-wrapper {
+			padding: 40px 0 20px 0;
+			.address {
+				@include text-style(.7rem, $smooth-black);
+			}
+		}
+	}
+}

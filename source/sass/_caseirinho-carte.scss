@@ -1,0 +1,169 @@
+/* Caseirinho Carte - Cannelle (http://github.com/fernandoted/cannelle)
+   author: fernando ted
+   http://fernandoted.com.br/ - http://github.com/fernandoted/ - http://takealook.com.br/
+   07/02/2016 
+*/
+
+#caseirinho-carte {
+	width: 100%;
+	padding: 60px 0 40px 0;
+}
+
+.caseirinho-carte-content {
+	width: 100%;
+
+	.caseirinho-item-container-reverse, .caseirinho-item-container-line {
+		-webkit-flex-direction: column-reverse;
+		flex-direction: column-reverse;
+	}
+	.caseirinho-item-container, .caseirinho-item-container-reverse, .caseirinho-item-container-line {
+		margin-bottom: 40px;
+		display: -webkit-flex;
+		display: flex;
+		-webkit-justify-content: center;
+		justify-content: center;
+		-webkit-flex-wrap: wrap;
+		flex-wrap: wrap;
+		
+		.carte-item-wrapper {
+			-webkit-flex: 1;
+			flex: 1;
+			display: -webkit-flex;
+			display: flex;
+			-webkit-flex-wrap: wrap;
+			flex-wrap: wrap;
+			-webkit-flex-direction: column-reverse;
+			flex-direction: column-reverse;
+			
+			/*.soup-image-wrapper {*/
+			.item-image-wrapper {
+				width: 100%;
+				text-align: center;
+			}
+			.text-wrapper-center, .text-wrapper-right, .text-wrapper-left, .text-wrapper-soup {
+				padding-left: 1rem;
+				padding-right: 1rem;
+				
+				.carte-item-title, .carte-item-feijao {
+					@include text-style(1.250rem, $gray-text);
+					text-align: center;
+				}
+				.item-desc {
+					@include text-style(.9rem, $gray-text);
+					text-align: left;
+				}
+			}
+		}
+		.container-soup {
+			width: 70%;
+			display: -webkit-flex;
+			display: flex;
+			-webkit-flex-wrap: wrap;
+			flex-wrap: wrap;
+			-webkit-justify-content: center;
+			justify-content: center;
+
+			.soup-image-wrapper {
+				width: 50%;
+				display: -webkit-flex;
+				display: flex;
+				-webkit-align-items: center;
+				align-items: center;
+				
+				.soup-image {
+					width: 100%;
+				}
+				.carte-item-title {
+					width: 100%;
+				}
+			}
+		}
+	}
+}
+/* DESKTOP */
+@media screen and (min-width: 769px) {
+	
+	#caseirinho-carte {
+		width: 100%;
+		padding-bottom: 80px;
+		padding-top: 0;
+	}
+	
+	.caseirinho-carte-content {
+		padding-top: 40px;
+
+		.caseirinho-item-container-reverse {
+			-webkit-flex-direction: row;
+			flex-direction: row;
+		}
+		.caseirinho-item-container-line {
+			-webkit-flex-direction: row-reverse;
+			flex-direction: row-reverse;
+		}
+		.caseirinho-item-container {
+			margin: 0 40px;
+		}
+		.caseirinho-item-container, .caseirinho-item-container-reverse, .caseirinho-item-container-line {
+			padding: 20px 0;
+			margin-bottom: 0;
+			
+			.carte-item-wrapper {
+				-webkit-flex-direction: column;
+				flex-direction: column;
+				
+				.item-image-wrapper {
+					/* _images.scss */
+				}
+				.text-wrapper-center {
+					width: 45%;
+					margin: 0 auto;
+					
+					.carte-item-title {
+						text-align: right;
+					}
+					.item-desc {
+						text-align: right;
+					}
+				}
+				.text-wrapper-right {
+					height: 100%;
+					padding-right: 150px;
+					-webkit-display: flex;
+					display: flex;
+					-webkit-align-items: center;
+					align-items: center;
+					
+					.carte-item-title {
+						padding-top: 150px;
+						text-align: left;
+					}
+					.carte-item-feijao {
+						/*padding-top: 30px;*/
+						text-align: left;
+					}
+					.item-desc {
+						text-align: left;
+					}
+				}
+				.text-wrapper-left {
+					padding-left: 150px;
+					
+					.carte-item-title {
+						padding-top: 100px;
+						text-align: right;
+					}	
+					.item-desc {
+						text-align: right;
+					}
+				}
+				.text-wrapper-soup {
+					.item-desc {
+						text-align: center;
+					}
+				}
+			}
+		}
+	}
+}
+
+

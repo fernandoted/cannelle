@@ -1,0 +1,101 @@
+/* Topbar - Cannelle (http://github.com/fernandoted/cannelle)
+   author: fernando ted
+   http://fernandoted.com.br/ - http://github.com/fernandoted/ - http://takealook.com.br/
+   07/02/2016 
+*/
+
+
+.topbar-home {
+	width: 100%;
+	display: block;
+	margin-bottom: 40px;
+	
+	.social-wrapper {
+		margin: 40px 0 0 20px;
+		width: 50%;
+		
+		.social-link {
+			color: $white;
+			opacity: .8;
+			margin-right: 8px;
+			-webkit-transition: ease-in-out .17s;
+			-moz-transition: ease-in-out .17s;
+			-o-transition: ease-in-out .17s;
+			transition: ease-in-out .17s;
+			
+			&:hover {
+				opacity: 1;
+			}
+			
+			.social-icon {
+				font-size: 1.7rem;
+			}
+		}
+	}
+}
+
+.align-right {
+	-webkit-align-self: flex-end;
+	align-self: flex-end;
+}
+
+.topbar {
+	width: 100%;
+	padding: 20px 20px 0 20px;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-justify-content: space-between;
+	justify-content: space-between;
+	
+	.topbar-wrapper-1 {
+		text-align: left;
+	}
+	
+	.topbar-wrapper-2 {
+		text-align: right;
+		
+		.topbar-link {
+			margin-left: 10px;
+		}
+	}
+	
+	.topbar-wrapper-1, .topbar-wrapper-2 {
+		width: 50%;
+		
+		.topbar-link {
+			color: #222222;
+			
+			.topbar-icon {
+				font-size: 1.8rem;
+			}
+		}
+	}
+}
+
+/* DESKTOP */
+@media screen and (min-width: 769px) {
+	
+	.topbar-home {
+		display: none;
+	}
+	
+	.topbar {
+		padding: 20px 80px 0 80px;
+		
+		.topbar-wrapper-1, .topbar-wrapper-2 {
+			.topbar-link {
+				-webkit-transition: ease-in-out .17s;
+				-moz-transition: ease-in-out .17s;
+				-o-transition: ease-in-out .17s;
+				transition: ease-in-out .17s;
+				
+				.topbar-icon {
+					font-size: 1.4rem;
+				}
+				&:hover {
+					opacity: .6;
+				}
+			}
+		}
+	}
+}
