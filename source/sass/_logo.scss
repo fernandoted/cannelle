@@ -21,11 +21,18 @@
 }
 
 .logo-wrapper {
-	width: 70%;
+	width: 60%;
 }
 
 .logo-caseirinho-wrapper {
 	width: 60%;
+}
+
+/* SMARTPHONE PORTRAIT */
+@media screen and (max-device-width: 667px) and (orientation: landscape) {
+	.logo-wrapper {
+		width: 40%;
+	}
 }
 
 /* DESKTOP */

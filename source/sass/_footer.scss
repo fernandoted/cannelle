@@ -5,9 +5,17 @@
 */
 
 
+/* IPHONE 4 */
+@media only screen and (min-device-width: 320px) and (max-device-height: 480px) {
+	.footer-home {
+		margin-top: 20px;
+	}
+
+}
+
 .footer-home {
 	width: 100%;
-	margin-top: 40px;
+	/*margin-top: 40px;*/
 	margin-bottom: 10px;
 	display: -webkit-flex;
 	display: flex;
@@ -18,6 +26,7 @@
 	
 	.footer-home-container {
 		text-align: center;
+		line-height: 1.1rem;
 		
 		.footer-home-text {
 			@include text-style(.8rem, $white);
@@ -44,6 +53,19 @@
 	}
 }
 
+/* SMARTPHONE LANDSCAPE */
+@media screen and (min-device-width: 320px) 
+  			  and (max-device-width: 667px) 
+  			  and (orientation: landscape) {
+  	.footer-home {
+		.footer-home-container {
+			.footer-home-text {
+				padding-bottom: 20px;
+			}
+		}
+  	}
+}
+
 /* DESKTOP */
 @media screen and (min-width: 769px) {
 	.footer-home {
@@ -54,6 +76,7 @@
 		
 		
 		.footer-home-container {
+			line-height: 1.5rem;
 			
 			.footer-home-text {
 				/*margin-top: 100px;*/

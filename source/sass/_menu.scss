@@ -4,23 +4,52 @@
    07/02/2016 
 */
 
+/* IPHONE 4 */
+@media only screen and (min-device-width: 320px) and (max-device-height: 480px) {
+	.menu-home-container {
+		padding-top: 100px;
+		padding-bottom: 0;
+		.menu-list {
+			.menu-item {
+				margin: 5px 0;
+				.menu-link {
+					@include text-style(1rem, $white);
+				}
+			}
+		}
+	}
+}
 
+/* IPHONE 5 */
+@media only screen and (min-device-width: 320px) and (min-device-height: 568px) {
+	.menu-home-container {
+		padding-top: 40px;
+		padding-bottom: 40px;
+		.menu-list {
+			.menu-item {
+				margin: 10px 0;
+				.menu-link {
+					@include text-style(1.250rem, $white);
+				}
+			}
+		}
+	}
+}
 /* SMARTPHONE - iPhone 6 */
 .menu-home-container {
 	width: 100%;
-	padding-top: 40px;
-	padding-bottom: 40px;
-	
 	.menu-list {
 		text-align: center;
 		padding: 0;
-		
+		display: -webkit-flex;
+		display: flex;
+		-webkit-flex-direction: column;
+		flex-direction: column;
+		-webkit-justify-content: center;
+		justify-content: center;
 		.menu-item {
-			margin: 10px 0;
-			
 			.menu-link {
-				@include text-style(1.250rem, $white);
-				padding-bottom: 10px;
+				padding: 0;
 				font-family: $text-topic;
 				position: relative;
 				text-decoration: none;
@@ -128,39 +157,43 @@
 			}
 		}
 	}
-	/*.main-menu-container {
-		/*padding: 60px 0 40px 0;*//*
-		
-		.section-menu-list {
-			
-			.section-menu-item {
-	
-				.main-menu-link {
-					/*@include text-style(.9rem, $smooth-black);*//*
-					padding-left: 20px;
-					padding-right: 20px;
-				}
+}
+
+/* SMATPHONE LANDSCAPE */
+@media screen and (min-device-width: 320px) 
+  			  and (max-device-width: 768px) 
+  			  and (orientation: landscape) {
+	.menu-home-container {
+		padding-top: 150px;
+		padding-bottom: 0;
+
+		.menu-list {
+			.menu-item {
+				padding-left: 20px;
+				padding-right: 20px;
 			}
 		}
-	}*/
+	}
+}
+
+/* FROM SMART'S LANDSCAPE UP */
+@media screen and (min-width: 480px) {
+	.menu-home-container {
+		.menu-list {
+			-webkit-flex-direction: row;
+			flex-direction: row;
+		}
+	}
 }
 
 /* DESKTOP */
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 768px) {
 	.menu-home-container {
 		padding-bottom: 0;
-		
 		.menu-list {
-			display: -webkit-flex;
-			display: flex;
-			-webkit-justify-content: center;
-			justify-content: center;
-			
 			.menu-item {
 				margin: 0 30px;
-				
 				.menu-link {
-					
 				}
 				.menu-link:after {
 					visibility: visible;
@@ -170,7 +203,6 @@
 	}
 	.section-menu-container {
 		padding: 20px 0;
-		
 		.section-menu-list {		
 			.section-menu-item {
 				.section-menu-link {
@@ -182,14 +214,10 @@
 			}
 		}
 	}
-	
 	.main-menu-container {
-		padding: 60px 0 40px 0;
-		
+		padding: 60px 0 40px 0;	
 		.section-menu-list {
-			
 			.section-menu-item {
-	
 				.main-menu-link {
 					@include text-style(1rem, $smooth-black);
 					padding-left: 40px;

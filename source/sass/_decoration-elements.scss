@@ -4,6 +4,14 @@
    07/02/2016 
 */
 
+/* IPHONE 4 */
+@media only screen and (min-device-width: 320px) and (max-device-height: 480px) {
+	.mold-container {
+		.mold-wrapper {
+			width: 60%;
+		}
+	}
+}
 
 .top-corner-mold-container {
 	display: none;
@@ -21,7 +29,7 @@
 	justify-content: center;
 	
 	.mold-wrapper {
-		width: 80%;
+		/*width: 80%;*/
 		
 		.mold-home, .mold-footer {
 			width: 100%;
@@ -61,12 +69,23 @@
 	}
 }
 
+/* SMARTPHONE LANDSCAPE */
+@media screen and (min-device-width: 320px) 
+  			  and (max-device-width: 667px) 
+  			  and (orientation: landscape) {
+  	.mold-container {
+  		.mold-wrapper {
+  			width: 50%;
+  		}
+  	}
+}
+
 /* DESKTOP */
 @media screen and (min-width: 769px) {
 	
 	.top-corner-mold-container {
 		display: block;
-		margin-top: 60px;
+		margin-top: 80px;
 		display: -webkit-flex;
 		display: flex;
 		justify-content: space-between;

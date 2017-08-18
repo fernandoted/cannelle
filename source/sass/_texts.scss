@@ -66,20 +66,52 @@
 		}
 	}	
 }
+.credit-wrapper {
+	width: 100%;
+	text-align: center;
+	.credit-home {
+		@include text-style(.6rem, $white);
+		.credit-link {
+			color: $white;
+		}
+	}
+	.credit {
+		@include text-style(.6rem, $black);
+		.credit-link {
+			color: $black;
+		}
+	}
+	.credit-home, .credit {
+		.credit-link {
+			-webkit-transition: .2s ease-in-out;
+			-moz-transition: .2s ease-in-out;
+			-o-transition: .2s ease-in-out;
+			transition: .2s ease-in-out;
+
+			&:hover {
+				color: #FF0000;
+				text-decoration: none;
+				font-weight: bold;
+			}
+		}
+	}
+}
+/* cozinha caiçara - message box */
+	.message-wrapper {
+		width: 100%;
+		/*margin: 0 auto;*/
+		.message {
+			@include text-style(.8rem, $white);
+			background: rgba(0,0,0,0.6);
+			padding: 20px;
+			opacity: .8;
+			text-align: left;
+			margin-bottom: 60px;
+		}
+	}
 
 /* DESKTOP */
 @media screen and (min-width: 769px) {
-	/*.caseirinho-img-intro {
-	
-		.paragraph-wrapper {	
-			width: 45%;
-			margin-left: 80px;
-			
-			.text {
-				padding: 0;
-			}
-		}
-	}*/
 	.paragraph-wrapper {
 		width: 100%;
 	}
@@ -107,6 +139,29 @@
 			width: 55%;
 		}
 	}
+	.credit-wrapper {
+		text-align: right;
+		.credit-home {
+			@include text-style(.7rem, $white);
+		}
+		.credit {
+			@include text-style(.7rem, $black);
+			padding-right: 80px;
+		}
+	}
+	/* cozinha caiçara - message box */
+	.message-wrapper {
+		width: 60%;
+		margin: 0 auto;
+		.message {
+			@include text-style(1rem, $white);
+			background: rgba(0,0,0,0.6);
+			padding: 20px;
+			opacity: .8;
+			text-align: center;
+			margin-bottom: 80px;
+		}
+	}
 	.store-text-container {
 		margin: 0 40px 0 40px;
 		
@@ -114,19 +169,9 @@
 			-webkit-flex: 1;
 			flex: 1;
 		}
-		.info-wrapper {
-			/*width: 100%;*/
-		}
 		.store-wrapper, .info-wrapper {
 			.store-name {
-				/*@include text-style(1rem, $white);
-				text-transform: uppercase;
-				text-align: center;*/
 				padding-bottom: 20px;
-			}
-			.store-info {
-				/*@include text-style(.9rem, $white);
-				text-align: center;*/
 			}
 		}	
 	}
